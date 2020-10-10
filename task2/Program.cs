@@ -10,6 +10,14 @@ namespace task2
     {
         static void Main(string[] args)
         {
+            Random rand = new Random();
+            int size = int.Parse(Console.ReadLine());
+            int[] arr = new int[size];
+            for (int i = 0; i < arr.Length; i++)
+                arr[i] = rand.Next(-100, 100);
+            for (int i = 0; i < arr.Length; i++)
+                Console.WriteLine(arr[i]);
+            Console.WriteLine($"Минимальное положительное число: {arr.Min(i => i > 0)}");
         }
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysTasks", "ArraysTasks\ArraysTasks.csproj", "{6508E84B-A7C6-4BE0-8E0F-B0DA7DD82B06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task1", "ArraysTasks\task1.csproj", "{6508E84B-A7C6-4BE0-8E0F-B0DA7DD82B06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task2", "task2\task2.csproj", "{C20B9174-47FA-4200-BE05-253B858A15CB}"
 EndProject
