@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoubleMinMax;
 
 namespace task4
 {
@@ -12,19 +13,19 @@ namespace task4
         {
             Random rand = new Random();
             int n = int.Parse(Console.ReadLine());
-            int[] arr = new int[n];
+            double[] arr = new double[n];
 
             for (int i = 0; i < arr.Length; i++)
-                arr[i] = rand.Next(1,51);
+                arr[i] = RandomExtensions.NextDouble(rand, 1, 50);
 
-            int min = arr[1];
+            double min = arr[1];
             for (int i = 3; i < arr.Length; i+=2)
             {
                 if (arr[i] < min)
                     min = arr[i];
             }
 
-            int max = arr[0];
+            double max = arr[0];
             for (int i = 2; i < arr.Length; i+=2)
             {
                 if (arr[i] > max)

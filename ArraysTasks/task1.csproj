@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C88A86FE-DF8E-4375-8AB7-99172CF52FB1}</ProjectGuid>
+    <ProjectGuid>{6508E84B-A7C6-4BE0-8E0F-B0DA7DD82B06}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>task4</RootNamespace>
-    <AssemblyName>task4</AssemblyName>
+    <RootNamespace>ArraysTasks</RootNamespace>
+    <AssemblyName>ArraysTasks</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="..\task1\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

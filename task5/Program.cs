@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoubleMinMax;
 
 namespace task5
 {
@@ -13,10 +14,10 @@ namespace task5
             Random rand = new Random();
             int n = int.Parse(Console.ReadLine());
 
-            int[] arr = new int[n];
+            double[] arr = new double[n];
 
             for (int i = 0; i < arr.Length; i++)
-                arr[i] = rand.Next(-4, 9);
+                arr[i] = RandomExtensions.NextDouble(rand, -4, 8);
 
             arr = arr.OrderByDescending(i => Math.Abs(i) > 2).ToArray();
             for (int i = 0; i < arr.Length; i++)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DoubleMinMax;
 
 namespace task3
 {
@@ -12,13 +13,13 @@ namespace task3
         {
             Random rand = new Random();
             int n = int.Parse(Console.ReadLine());
-            int[] arr = new int[n];
-            int sum;
+            double[] arr = new double[n];
+            double sum;
             int count;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = rand.Next(1, 11);
+                arr[i] = RandomExtensions.NextDouble(rand, 1, 10);
                 if (arr[i] < 2)
                     arr[i] = 0;
             }
